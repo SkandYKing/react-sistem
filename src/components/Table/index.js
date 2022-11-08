@@ -13,6 +13,7 @@ function Table(props) {
         <td>{props.name5}</td>
         <td>{props.name6}</td>
         <td>{props.name7}</td>
+        <td>{props.name8}</td>
         </tr>
       </tbody>
       </table>

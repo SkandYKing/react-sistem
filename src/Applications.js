@@ -7,10 +7,14 @@ import Navigation from './components/Navigation';
 import Create from './components/Create';
 
 const arr = [
-    { name1: '1', name2: '2', name3: '3', name4: '4', name5: '5', name6: '6', name7: '7'},
-    { name1: '11', name2: '22', name3: '33', name4: '44', name5: '55', name6: '66', name7: '77'},
-    { name1: '111', name2: '222', name3: '333', name4: '444', name5: '555', name6: '666', name7: '777'},
-    { name1: '1111', name2: '2222', name3: '3333', name4: '4444', name5: '5555', name6: '6666', name7: '7777'},
+    { name1: '1', name2: 'АН', name3: '3', name4: '49', name5: '04/03/2022', name6: '14:00', name7: 'Исслед.герметичности э/ж', name8: 'Исслед.до КРС'},
+    { name1: '2', name2: 'АН', name3: '3', name4: '49', name5: '11/10/2022', name6: '10:30', name7: 'Освоение после ПРС', name8: 'Освоение'},
+    { name1: '3', name2: 'АН', name3: '5', name4: '83Н', name5: '06/05/2022', name6: '09:30', name7: 'Ожидание ГТМ при КРС', name8: 'Геолог. ограничен.'},
+    { name1: '4', name2: 'АН', name3: '5', name4: '85', name5: '05/04/2022', name6: '08:00', name7: 'Ожидание исследованний при ТРС', name8: 'Геолог. ограничен'},
+    { name1: '5', name2: 'АН', name3: '4', name4: '100', name5: '06/10/2022', name6: '12:45', name7: 'Освоение после ПРС', name8: 'Освоение'},
+    { name1: '6', name2: 'АН', name3: '4', name4: '101', name5: '19/10/2022', name6: '05:30', name7: 'Освоение после ПРС', name8: 'Освоение'},
+    { name1: '7', name2: 'АН', name3: '3', name4: '49', name5: '04/03/2022', name6: '14:00', name7: 'Исслед.герметичности э/ж', name8: 'Исслед.до КРС'},
+    { name1: '8', name2: 'АН', name3: '3', name4: '49', name5: '11/10/2022', name6: '10:30', name7: 'Освоение после ПРС', name8: 'Освоение'},
 ];
 
 function Applications() {
@@ -61,9 +65,10 @@ function Applications() {
                         <th>НГДУ</th>
                         <th>Цех</th>
                         <th>№ скважины</th>
-                        <th>Дата-Время</th>
-                        <th>Площадь</th>
-                        <th>Задача</th>
+                        <th>Дата</th>
+                        <th>Время</th>
+                        <th>Причина простоя</th>
+                        <th>Группа простоев</th>
                         </tr>
                     </thead>
                     </table>
@@ -76,7 +81,8 @@ function Applications() {
                             name4={obj.name4}
                             name5={obj.name5}
                             name6={obj.name6}
-                            name7="7"
+                            name7={obj.name7}
+                            name8={obj.name8}
                             />
                         ))}
                 
